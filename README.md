@@ -25,25 +25,25 @@ The dataset used for training and evaluation includes chest X-ray images labeled
 Clone this repository to your local machine:
 
 
-git clone https://github.com/aayushkanjani/CNN_COVID19_detection.git
+git clone https://github.com/aayushkanjani/CNN_COVID19_detection.git <br>
 cd CNN_COVID19_detection
 
 ## Model Architecture
 The model uses the EfficientNetB1 pre-trained model as the base. The architecture includes:
 
-EfficientNetB1 base model (pre-trained on ImageNet)
-Global average pooling layer
-Fully connected layer with dropout for regularization
-Output layer with softmax activation for classification
+EfficientNetB1 base model (pre-trained on ImageNet)<br>
+using max pooling <br>
+Fully connected layer with dropout for regularization <br>
+Output layer with softmax activation for classification <br>
 
 
 ## Training
 The model is trained using the following settings:
 
-Optimizer: Adamax
-Loss function: Categorical Crossentropy
-Metrics: Accuracy
-Number of epochs: 25 (can be adjusted)
+Optimizer: Adamax <br>
+Loss function: Categorical Crossentropy <br>
+Metrics: Accuracy <br>
+Number of epochs: 25 (can be adjusted) <br>
 Batch size: 32 (can be adjusted)
 
 ## Evaluation
